@@ -19,10 +19,10 @@ module.exports = {
 			],
 			callback: async function (action) {
 				if (action.options.powerAction == 'ON') {
-					self.sendCommand('IMPWR=ON');
+					self.sendCommand('KEY=01');
 				}
 				else if (action.options.powerAction == 'OFF') {
-					self.sendCommand('KEY=6C');
+					self.sendCommand('KEY=01');
 				}
 			}
 		};
