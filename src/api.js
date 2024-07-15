@@ -46,7 +46,7 @@ module.exports = {
 		if (self.config.host !== '' && self.config.host !== undefined) {
 			const https = self.config.https;
 			const timestamp = new Date().getTime();
-			const url = "http" + (https ? "s" : "") + "://" + self.config.host + '/cgi-bin/directsend?' + path + "&_=" + timestamp;
+			const url = "http" + (https ? "s" : "") + "://" + self.config.host + '/cgi-bin/sender.exe?' + path + "&_=" + timestamp;
 			
 			let args = {
 				headers: { //I really don't think these are necessary but the original author had them in there -- JA
