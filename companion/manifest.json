@@ -17,8 +17,8 @@
 	"runtime": {
 		"type": "node18",
 		"api": "nodejs-ipc",
-		"apiVersion": "1.0.0",
-		"entrypoint": "../index.js"
+		"apiVersion": "1.4.1",
+		"entrypoint": "../main.js"
 	},
 	"manufacturer": "Epson",
 	"products": [
