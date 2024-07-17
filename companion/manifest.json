@@ -1,32 +1,28 @@
 {
-	"id": "epson-businesspj",
-	"name": "epson-businesspj",
-	"shortname": "epsonpj",
+	"id": "epson-powerlite",
+	"name": "epson-powerlite",
+	"shortname": "epsonplp",
 	"description": "",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-epson-businesspj.git",
-	"bugs": "https://github.com/bitfocus/companion-module-epson-businesspj/issues",
+	"repository": "git+https://github.com/DueHack12/companion-module-epson-businesspj.git",
+	"bugs": "https://github.com/DueHack12/companion-module-epson-businesspj/issues",
 	"maintainers": [
 		{
-			"name": "Arthur Penner",
-			"email": "arthur.penner@yahoo.de"
-		},
-		{
-			"name": "Joseph Adams",
-			"email": "josephdadams@gmail.com"
+			"name": "Jack Singewald",
+			"email": "jack.singewald@gmail.com"
 		}
 	],
 	"legacyIds": [],
 	"runtime": {
 		"type": "node18",
 		"api": "nodejs-ipc",
-		"apiVersion": "0.0.0",
+		"apiVersion": "1.0.0",
 		"entrypoint": "../index.js"
 	},
 	"manufacturer": "Epson",
 	"products": [
-		"Business Projectors"
+		"PowerLite Pro"
 	],
 	"keywords": [
 		"Projector",
