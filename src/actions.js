@@ -12,7 +12,7 @@ module.exports = {
 					id: 'powerAction',
 					default: 'POWERT',
 					choices: [
-						{ id: 'POWERT', label: 'Power On/Off' },
+						{ id: 'POWERT', label: 'Power On/Off' }
 					]
 				}
 			],
@@ -30,14 +30,14 @@ module.exports = {
 					type: 'dropdown',
 					label: 'source',
 					id: 'sourceId',
-					default: '30',
+					default: 'F2',
 					choices: [
 						{ id: 'F2', label: 'HDMI' },
 						{ id: 'F2', label: 'HDBaseT' },
 						{ id: 'F1', label: 'DVI-D' },
 						{ id: 'F2', label: 'SDI' },
 						{ id: 'F1', label: 'VGA' },
-						{ id: 'F1', label: 'BNC' },
+						{ id: 'F1', label: 'BNC' }
 					]
 				}
 			],
@@ -53,15 +53,14 @@ module.exports = {
 					type: 'dropdown',
 					label: 'av mute',
 					id: 'avMuteAction',
-					default: 'ON',
+					default: '3E',
 					choices: [
-						{ id: 'ON', label: 'Execute A/V Mute' },
-						{ id: 'OFF', label: 'Cancel A/V Mute' },
+						{ id: '3E', label: 'Toggle A/V Mute' }
 					]
 				}
 			],
 			callback: async function (action) {
-				self.sendCommand('MUTE=' + action.options.avMuteAction);
+				self.sendCommand('KEY=' + action.options.avMuteAction);
 			}
 		};
 		
@@ -72,15 +71,14 @@ module.exports = {
 					type: 'dropdown',
 					label: 'freeze',
 					id: 'freezeAction',
-					default: 'ON',
+					default: '47',
 					choices: [
-						{ id: 'ON', label: 'Execute Freeze' },
-						{ id: 'OFF', label: 'Cancel Freeze' },
+						{ id: '47', label: 'Toggle Freeze' }
 					]
 				}
 			],
 			callback: async function (action) {
-				self.sendCommand('FREEZE=' + action.options.freezeAction);
+				self.sendCommand('KEY=' + action.options.freezeAction);
 			}
 		};
 		
