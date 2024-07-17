@@ -8,7 +8,7 @@ module.exports = {
 				id: 'info',
 				width: 12,
 				label: 'Information',
-				value: 'This module is for Epson Business projectors.',
+				value: 'This module is for Epson PowerLite projectors.',
 			},
 			{
 				type: 'textinput',
