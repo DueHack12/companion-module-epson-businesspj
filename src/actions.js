@@ -10,18 +10,14 @@ module.exports = {
 					type: 'dropdown',
 					label: 'state',
 					id: 'powerAction',
-					default: 'ON',
+					default: 'POWERT',
 					choices: [
-						{ id: 'ON', label: 'Power On' },
-						{ id: 'OFF', label: 'Power Off (Press twice to power off)' },
+						{ id: 'POWERT', label: 'Power On/Off' },
 					]
 				}
 			],
 			callback: async function (action) {
-				if (action.options.powerAction == 'ON') {
-					self.sendCommand('KEY=01');
-				}
-				else if (action.options.powerAction == 'OFF') {
+				if (action.options.powerAction == 'POWERT') {
 					self.sendCommand('KEY=01');
 				}
 			}
@@ -36,13 +32,12 @@ module.exports = {
 					id: 'sourceId',
 					default: '30',
 					choices: [
-						{ id: '30', label: 'HDMI' },
-						{ id: '80', label: 'HDBaseT' },
-						{ id: 'A0', label: 'DVI-D' },
-						{ id: '60', label: 'SDI' },
-						{ id: '10', label: 'VGA' },
-						{ id: 'B0', label: 'BNC' },
-						{ id: '53', label: 'Wireless' }
+						{ id: 'F2', label: 'HDMI' },
+						{ id: 'F2', label: 'HDBaseT' },
+						{ id: 'F1', label: 'DVI-D' },
+						{ id: 'F2', label: 'SDI' },
+						{ id: 'F1', label: 'VGA' },
+						{ id: 'F1', label: 'BNC' },
 					]
 				}
 			],
